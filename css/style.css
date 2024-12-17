@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .container .banner {
+    border-radius: 0;
+  }
+
+  .container .banner .banner-text {
+    margin: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.banner {
+  flex: 1;
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-position: center;
+}
+
+.banner .banner-text {
+  margin: 6rem 4rem;
+  color: white;
+  line-height: 2.5rem;
+}
+
+.login-form {
+  flex: 1;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.login-form select {
+  float: right;
+  border: none;
+}
+
+.login-form select .language .vn {
+  background-image: url('../img/flagvn.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.login-form .login-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+
+.login-content input {
+  padding: 0.3rem;
+  border: none;
+  background-color: rgb(232, 240, 254);
+  border-bottom: 2px solid rgb(191, 197, 208);
+}
+
+.login-content input:focus {
+  outline: none;
+}
+
+.login-content .form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.login-content .forgot {
+  display: flex;
+  justify-content: end;
+}
+
+.forgot a {
+  text-decoration: none;
+  color: black;
+  margin-top: -1rem;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+.form-item .login-button {
+  padding: 0.5rem;
+  border: 2px solid rgb(122, 189, 234);
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(122, 189, 234);
+  font-weight: 600;
+}
+
+.form-item .login-button:hover {
+  cursor: pointer;
+}
+
+.login-content .divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.login-content .divider-text {
+  background-color: #fff;
+  padding: 0 10px;
+  color: #666;
+  font-size: 14px;
+  position: relative;
+  top: -0.6em;
+}
+
+.form-item .social-button {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: white;
+  color: gray;
+  justify-content: center;
+  align-items: center;
+}
