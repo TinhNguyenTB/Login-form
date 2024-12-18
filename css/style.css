@@ -18,6 +18,22 @@ body {
   background: white;
 }
 
+.banner {
+  flex: 1;
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-position: center;
+}
+
+.banner .banner-text {
+  margin: 6rem 4rem;
+  color: white;
+  line-height: 2.5rem;
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -35,25 +51,10 @@ body {
   }
 }
 
-.banner {
-  flex: 1;
-  background-image: url('../img/background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  background-position: center;
-}
-
-.banner .banner-text {
-  margin: 6rem 4rem;
-  color: white;
-  line-height: 2.5rem;
-}
-
 .login-form {
   flex: 1;
   display: flex;
+  position: relative;
   background-color: white;
   flex-direction: column;
   padding: 1rem;
@@ -62,13 +63,6 @@ body {
 .login-form select {
   float: right;
   border: none;
-}
-
-.login-form select .language .vn {
-  background-image: url('../img/flagvn.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 .login-form .login-content {
@@ -152,4 +146,11 @@ body {
   color: gray;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.login-form .register {
+  position: absolute;
+  bottom: -30px;
+  left: 30%;
 }
